@@ -1,5 +1,9 @@
 # substrate.yaml — Substrate configuration
 
+schema_type: protobuf
+base_schema: protos/demo.proto
+head_schema: protos/demo.proto
+
 consumers:
   - name: frontend
     provider_repo: substrate-demo-testing/microservices-demo
