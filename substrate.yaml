@@ -1,11 +1,22 @@
 # substrate.yaml — Substrate configuration
-# Docs: https://github.com/KrushnaVardhanReddy/Substrate
 
-# Auto-Discovery Engine
-discovery:
-  match_patterns:
-    - "pb/**/*.proto"
-    - "src/**/*.proto"
+consumers:
+  - name: frontend
+    provider_repo: substrate-demo-testing/microservices-demo
+    schema_type: protobuf
+    provider_spec_path: protos/demo.proto
+  - name: checkoutservice
+    provider_repo: substrate-demo-testing/microservices-demo
+    schema_type: protobuf
+    provider_spec_path: protos/demo.proto
+  - name: recommendationservice
+    provider_repo: substrate-demo-testing/microservices-demo
+    schema_type: protobuf
+    provider_spec_path: protos/demo.proto
+  - name: emailservice
+    provider_repo: substrate-demo-testing/microservices-demo
+    schema_type: protobuf
+    provider_spec_path: protos/demo.proto
 
 owners:
   - team: platform-core
