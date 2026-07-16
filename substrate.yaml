@@ -1,0 +1,12 @@
+# substrate.yaml — Substrate configuration
+# Docs: https://github.com/KrushnaVardhanReddy/Substrate
+
+# Auto-Discovery Engine
+discovery:
+  match_patterns:
+    - "pb/**/*.proto"
+    - "src/**/*.proto"
+
+owners:
+  - team: platform-core
+    contact: platform@company.com
